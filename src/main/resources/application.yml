@@ -8,7 +8,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/customer_db
     username: postgres
-    password: password
+    password: Reloaded2!
     driver-class-name: org.postgresql.Driver
 
   jpa:

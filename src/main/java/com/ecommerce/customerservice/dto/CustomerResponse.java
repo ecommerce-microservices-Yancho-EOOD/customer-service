@@ -27,4 +27,4 @@ public class CustomerResponse {
         private Integer loyaltyPoints;
         private Boolean isActive;
         private LocalDateTime registeredDate;
-    }
+}
