@@ -6,9 +6,9 @@ spring:
     name: customer-service
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/customer_db
-    username: postgres
-    password: Reloaded2!
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/customer_db}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:password}
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -23,14 +23,13 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka:eureka123@localhost:8761/eureka/
+      defaultZone: ${EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE:http://eureka:eureka123@localhost:8761/eureka/}
   instance:
     prefer-ip-address: true
 
 logging:
   level:
-    com.ecommerce.customer: DEBUG
-    org.springframework.web: INFO
+    com.ecommerce.customerservice: DEBUG
     org.hibernate: INFO
 
 management:

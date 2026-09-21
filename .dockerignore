@@ -1,0 +1,44 @@
+# Build output
+target/
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Docker files (not needed inside)
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Documentation
+README.md
+*.md
+
+# Test output
+surefire-reports/
+failsafe-reports/
+
+# Environment files
+.env
+*.env
+.env.local
